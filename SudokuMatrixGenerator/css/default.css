@@ -1,0 +1,57 @@
+﻿body {
+	background:white;
+	color:black;
+}
+
+.ControllingPanel {
+	width : 30%;
+	position: absolute;
+	bottom: 50px;
+}
+
+.ControllingPanel label {
+	font-size:xx-large;
+	font-weight: normal;
+	padding: 20px;
+	display: block;
+	text-align: center;
+}
+label:hover{
+	background-color: #7DADF3;
+}
+.SudokuPanel{
+	margin-left:30%;
+}
+#SudokuTable {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ThreeByThreeTable {
+    border: 2px solid #7DADF3;
+}
+
+.NumberBoard {
+    padding: 17px 27px 17px 27px;
+	font-size: xx-large;
+	text-align: center;
+    border: 2px solid gray;
+}
+
+.NumberPicker {
+    border: 2px solid gray;
+    background: lightgray;
+}
+
+.NumberPicker:hover {
+    background: white;
+}
+
+.NumberPickerUnit {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.NumberPickerUnit:hover {
+    background: #7DADF3;
+}
