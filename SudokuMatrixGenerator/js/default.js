@@ -47,7 +47,7 @@
         return three_by_three_table;
     }
 	
-    window.onloaded = function (args) {
+    window.onload = function () {
         var sudoku_table = document.getElementById("SudokuTable");
         for (var i = 0; i < 3; ++i) {
             var trnode = document.createElement("tr");
@@ -58,5 +58,4 @@
                 tdnode.appendChild(create_three_by_three_table());
             }
         }
-		document.write("页面载入完成");
     };
