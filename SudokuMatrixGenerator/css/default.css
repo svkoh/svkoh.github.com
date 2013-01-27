@@ -1,6 +1,8 @@
 ﻿body {
 	background:white;
 	color:black;
+	text-align: center;
+	font-family: "Courier New";
 }
 
 .ControllingPanel {
@@ -28,39 +30,52 @@ label:hover{
 	height: 240px;
 	resize: none;
 }
-.SudokuPanel{
+#sudoku_panel{
 	margin-left:30%;
 }
-#SudokuTable {
-    margin-right: auto;
-    margin-left: auto;
+#sudoku_table {
+	position: relative;
+}
+#sudoku_canvas {
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
 
-.ThreeByThreeTable {
-    border: 2px solid #7DADF3;
+.view {
+	position: absolute;
+    width: 45px;
+    height: 45px;
 }
 
-.NumberBoard {
-    padding: 17px 27px 17px 27px;
-	font-size: xx-large;
-	text-align: center;
-    border: 2px solid gray;
+.view:hover {
+	cursor: pointer;
 }
 
-.NumberPicker {
-    border: 2px solid gray;
-    background: lightgray;
+.view span {
+	color: blue;
+	font-size: 24px;
+	line-height: 45px;
+    display: inline-block;
 }
 
-.NumberPicker:hover {
-    background: white;
+.picker {
+	position: absolute;
+    width: 45px;
+    height: 45px;
 }
 
-.NumberPickerUnit {
-    width: 20px;
-    height: 20px;
-    text-align: center;
+.picker-line {
+    width: 45px;
+    height: 15px;
 }
-.NumberPickerUnit:hover {
-    background: #7DADF3;
+
+.picker-unit {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
+.picker-unit:hover {
+	cursor: pointer;
 }
